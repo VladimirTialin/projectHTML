@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #282b38;
+  font-family: "Proxima Nova Rg";
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.button {
+  width: 171px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: #E58D35;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+}
+.button:hover {
+  background: #be6c1e;
+  color: #ececec;
+  transition: 0.4s;
+}
+.button:hover path {
+  fill: #ececec;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  gap: 97px;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading__menu {
+  display: flex;
+  gap: 35px;
+}
+.heading__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #fff;
+}
+.heading__link:hover {
+  color: #E58D35;
+}
+
+.banner {
+  position: relative;
+  margin-left: calc(50% - 910px);
+  margin-right: calc(50% - 910px);
+  max-width: 1820px;
+  height: 700px;
+  background-image: linear-gradient(94.52deg, rgba(4, 5, 17, 0.425) 1.89%, rgba(88, 88, 88, 0) 65.32%), url("../img/banner1.png");
+  background-position: left top;
+  border-radius: 10px;
+  box-shadow: 5px 15px 40px 0px rgba(11, 24, 97, 0.3215686275);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 149px;
+  padding-right: 149px;
+}
+.banner__box {
+  position: absolute;
+  left: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 463px;
+}
+.banner__head {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 70px;
+  color: #fff;
+}
+.banner__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #fff;
+  padding-bottom: 29px;
+}
+.banner__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 49px;
+  width: 293px;
+  height: 68px;
+  border-radius: 34px;
+}
+.banner__slider {
+  position: absolute;
+  left: 45%;
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  bottom: 43px;
+}
+.banner__circle {
+  cursor: pointer;
+  width: 5px;
+  height: 5px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.banner__arrow {
+  cursor: pointer;
+}
+.banner__arrow:hover path {
+  fill: #E58D35;
+}
+
+.active {
+  background: #FFF;
+}/*# sourceMappingURL=style.css.map */
