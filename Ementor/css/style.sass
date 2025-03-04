@@ -129,20 +129,234 @@ a
         text-align: center
         color: $colorText
         padding-bottom: 30px
-    &__button
-        width: 230px
-        height: 56px
+
+.button
+    width: 230px
+    height: 56px
+    border: none
+    border-radius: 0 20px
+    font-weight: 500
+    font-size: 16px
+    line-height: 16px
+    color: $colorText
+    transition: .4s
+    cursor: pointer
+.button-orange
+    background: $colorLink
+    &:hover
+        background: $colorText
+        color: $colorSite
+
+.button-green
+    background: $colorSite
+    &:hover
         background: $colorLink
-        border: none
-        border-radius: 0 20px
+        color: $colorText
+.article-head
+        font-weight: 500
+        font-size: 58px
+        line-height: 58px
+        text-align: center
+        color:  $colorBlue
+.article-text
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        text-align: left
+        color: $colorBlue
+        margin-bottom: 30px
+.paddingSite
+    padding-top: 120px
+    padding-bottom: 120px
+.bar
+    display: flex
+    flex-direction: row
+    gap: 30px
+    width: $sizeSite
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 15px
+    &__head
+        font-weight: 500
+        font-size: 58px
+        line-height: 58px
+        color: $colorSite
+    &__text
+        width: 270px
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: $colorBlue
+.box-teachers
+    display: flex
+    flex-direction: row
+    gap: 100px
+    padding-bottom: 120px
+    &__info
+        display: flex
+        flex-direction: column
+        gap: 20px      
+    &__person
+        display: flex
+        flex-direction: column
+        gap: 15px
+    &__teacher
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        grid-template-rows: repeat(2,1fr)
+        gap: 30px
+    &__link
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+        text-align: center
+        color: $colorBlue
+        transition: .4s
+        &:hover
+            color: $colorLink
+.training
+    display: flex
+    flex-direction: row
+    gap: 100px
+    background: $colorSite
+    &__border
+        position: relative
+        margin-left: 60px
+        width: 440px
+        height: 332px
+        background: url("../img/dash line.png") no-repeat
+        background-size: contain
+        img
+            position: absolute
+            top: 30px
+            right: 30px
+    &__format
+        display: flex
+        flex-direction: column
+        gap: 20px
+    &__text
+        text-align: left
+        color: $colorText
+    &__btn
+        margin-top: 30px
+.popular-courses
+    display: flex
+    flex-direction: column
+    gap: 60px
+    align-items: center
+    &__box
+        display: flex
+        flex-direction: row
+        gap: 30px
+    &__content
+        display: flex
+        flex-direction: column
+        gap: 15px
+        padding: 20px
+        border-radius: 10px
+        box-shadow: 5px 5px 30px 0px #6565651F
+    &__text
         font-weight: 500
         font-size: 16px
         line-height: 16px
-        color: $colorText
-        transition: .4s
+        color: $colorBlue
+.join
+    display: flex
+    flex-direction: row
+    justify-content: right
+    align-items: center
+    background:  #f8f7f6
+    &__background
+        width: 666px
+        height: 578px
+        background-image: url("../img/join.png")
+    &__box
+        display: flex
+        flex-direction: column
+        gap: 20px
+        width: 508px
+    &__btn
         &:hover
-            background: $colorText
-            color: $colorSite
+            background: $colorSite
+            color: $colorText
+.footer
+    padding-top: 120px
+    &__box
+        border-top:  1px solid #353a5a23
+        border-bottom: 1px solid #353a5a23
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__info
+        display: flex
+        flex-direction: column
+        align-items: left
+        gap: 27px
+    &__head
+        color: $colorBlue
+        justify-content: left
+    &__text
+        width: 270px
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+        text-align: left
+        color: $colorBlue
+    &__contact
+        padding-top: 20px
+        display: flex
+        gap: 25px
+    &__menu
+        display: flex
+        flex-direction: column
+        gap: 20px
+        article
+            padding-bottom: 11px
+            font-weight: 500
+
+    &__link
+        font-weight: 400
+        font-size: 16px
+        line-height: 16px
+        color: $colorBlue
+        &:hover
+            color: $colorLink
+            path
+                fill: $colorLink
+                opacity: 1
+                transition: 0.4s
+    &__mail
+        color: $colorBlue
+        article
+            padding-bottom: 30px
+            font-weight: 500
+        &_text 
+            font-weight: 400
+            font-size: 16px
+            line-height: 16px
+    &__author
+        padding-bottom: 30px
+        padding-top: 30px
+        display: flex
+        flex-direction: row
+        gap: 30px
+        justify-content: right
+        &_left
+            margin-right: 420px
+
+        &_text
+            font-size: 14px
+
+
+
+
+
+        
+        
+    
 
 
 
