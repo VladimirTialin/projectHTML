@@ -203,6 +203,10 @@ a {
   padding-bottom: 120px;
 }
 
+.heading-course {
+  background: #fff;
+}
+
 .bar {
   display: flex;
   flex-direction: row;
