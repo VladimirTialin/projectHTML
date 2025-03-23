@@ -1,0 +1,284 @@
+@import "vars"
+*
+    margin: 0
+    padding: 0
+body
+    display: flex
+    flex-wrap: wrap
+    font-family: 'Raleway'
+a
+    text-decoration: none
+.center
+    padding-left: calc( 50% - $sizeSite / 2 )
+    padding-right: calc( 50% - $sizeSite / 2 )
+.indent
+    padding-top: 120px
+    padding-bottom: 120px
+.site-head
+    font-weight: 500
+    font-size: 58px
+    line-height: 120%
+    color: $colorBlue
+    &_green
+        color: $colorSite
+    &_white
+        color: $colorText
+    &_s
+        font-size: 22px
+        line-height: 130%
+    &_sl
+        font-size: 16px
+        line-height: 100%
+.site-text
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    color: $colorBlue
+    &_white
+        color: $colorText
+    &_s
+        font-size: 14px
+        line-height: 130%
+.site-link
+    font-weight: 500
+    font-size: 16px
+    line-height: 100%
+    color: $colorBlue
+    &_nav
+        display: inline-block
+        line-height: 2
+        transition: .3s
+        &:after 
+            display: block
+            content: ""
+            height: 2px
+            width: 0%
+            border-bottom: 2px dashed $colorLink
+        &:hover:after
+            width: 100%
+    &:hover
+        color: $colorLink
+    &_s
+        font-weight: 400
+    &_sl
+        font-weight: 400
+        font-size: 14px
+.logo
+    font-weight: 600
+    font-size: 30px
+    color: $colorBlue
+.button
+    width: 230px
+    height: 56px
+    border: none
+    border-radius: 0 20px
+    font-weight: 500
+    font-size: 16px
+    line-height: 16px
+    color: $colorText
+    transition: .4s
+    cursor: pointer
+    background: $colorLink
+    color: $colorText
+    &:hover
+       background: $colorSite
+    &__orange
+        background: $colorLink
+        &:hover
+            background: $colorText
+            color: $colorSite
+    &__green
+        background: $colorSite
+        &:hover
+            background: $colorLink
+            color: $colorText
+.header
+    width: $sizeSite 
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding-top: 40px
+    padding-bottom: 40px
+    &__nav
+        align-items: center
+        display: flex
+        flex-direction: row
+        gap: 40px
+.breadcrumbs
+    display: flex
+    gap: 15px
+    padding-top: 18px
+    padding-bottom: 60px
+    &__link
+        font-weight: 400
+        font-size: 14px
+        line-height: 100%
+        color: $colorBlue
+        transition: .4s
+        &:hover
+            color: $colorLink
+        &:not(:last-child)::after
+            padding-left: 15px
+            content: url(../img/bc_right.svg)
+        &:last-child
+            pointer-events: none
+            opacity: .5
+.course
+    display: flex
+    flex-wrap: wrap
+    gap: 40px
+    padding-bottom: 120px
+    &__head
+        width: 74.4%
+        padding-bottom: 25px
+    &__text
+        width: calc( 74.4% - 61px)
+    &__statistics
+        display: flex
+        flex-direction: row
+        gap: 30px
+    &__box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-align: center
+        gap: 15px
+        width: 270px
+.buy-course
+    display: flex
+    flex-direction: row
+    gap: 60px
+    width: 100vw
+    background: $colorSite
+    &__box
+        display: flex
+        flex-wrap: wrap
+        gap: 20px
+        width: 46.2%
+        &_text
+            padding-right: 62px
+            padding-bottom: 30px
+    &__logo
+        position: relative
+        width: 540px
+        height: 286px
+        background: url("../img/dash-line-left.png") no-repeat
+        background-size: contain
+        img
+            position: absolute
+            right: -30px
+            bottom: -30px
+.about-the-course
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 60px
+    &__box
+        display: flex
+        flex-direction: row
+        gap: 30px
+    &__content
+        display: flex
+        flex-direction: column
+        gap: 15px
+        width: 240px
+        padding: 25px 15px
+    &__head
+        display: flex
+        flex-direction: row
+        gap: 8px
+.discount
+    display: flex
+    flex-direction: row
+    width: 100vw
+    padding-left: 50%
+    background: url('../img/discount-logo.png') #f9f8fa
+    background-repeat: no-repeat
+    &__box
+        width: 444px
+        display: flex
+        flex-wrap: wrap
+        align-items: left
+    &__btn
+        margin-top: 30px
+.faq
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100vw
+    &__head
+        text-align: center
+    &__box
+        display: flex
+        flex-direction: column
+        gap: 30px
+        padding-top: 60px
+    &__details
+        position: relative
+        display: block
+        padding: 30px
+        width: 830px
+        border: none
+        border-radius: 10px
+        background: #fdfdfd
+        box-shadow: 5px 5px 30px 0px #6565651F
+        overflow: hidden
+        &::after 
+            position: absolute
+            display: flex
+            right: 30px
+            top: 28px
+            justify-content: center
+            align-items: center
+            content: url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16.5' cy='16.5' r='16' stroke='%2310B582' stroke-linejoin='round' stroke-dasharray='5 5'/%3E%3Cpath d='M9 16.5H24M16.5 24V9' stroke='%2310B582'/%3E%3C/svg%3E%0A")
+        &[open]::after
+            content: url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16.5' cy='16.5' r='16' stroke='%2310B582' stroke-linejoin='round' stroke-dasharray='5 5'/%3E%3Cline x1='9' y1='16.5' x2='24' y2='16.5' stroke='%2310B582'/%3E%3C/svg%3E ")
+    &__summary
+        list-style: none
+        cursor: pointer
+    &__content
+        padding-top: 15px
+        padding-right: 130px
+.footer
+    &__box
+        border-top:  1px solid #353a5a23
+        border-bottom: 1px solid #353a5a23
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding-top: 80px
+        padding-bottom: 49px
+    &__info
+        display: flex
+        flex-direction: column
+        align-items: left
+        gap: 27px
+    &__contact
+        padding-top: 20px
+        display: flex
+        gap: 25px
+    &__menu
+        display: flex
+        flex-direction: column
+        gap: 20px
+    &__link
+        &:hover
+            path
+                fill: $colorLink
+                opacity: 1
+                transition: 0.4s
+    &__gap
+        padding-bottom: 10px
+    &__text
+        padding-top: 20px
+    &__author
+        padding-bottom: 30px
+        padding-top: 30px
+        display: flex
+        flex-direction: row
+        gap: 30px
+        justify-content: right
+        &_left
+            margin-right: 420px
+

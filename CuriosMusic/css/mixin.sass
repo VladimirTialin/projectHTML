@@ -1,0 +1,33 @@
+@import 'vars'
+@mixin button-gradient()
+    span
+        transition: .4s
+        background: $colorActiveLink
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+@mixin button-white()
+    span
+        transition: .4s
+        background: $colorWhite
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+@mixin album-position()
+       display: flex
+       flex-flow: row wrap
+       justify-content: center
+       gap: 1.875rem
+@mixin link-icon()
+    transition: .4s
+    cursor: pointer
+    path
+        transition: .4s
+    &:hover
+        border: 1px solid $colorLink
+        path
+            stroke: $colorLink
+@mixin backgroundBlur()
+    box-shadow: 0px 4px 4px 0px #00000040
+    background: #7C7C7C20
+@mixin borderLine()
+    border-top: 1px solid #ffffff20
+    border-bottom: 1px solid #ffffff20
