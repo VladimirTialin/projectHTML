@@ -146,13 +146,16 @@ a
     display: flex
     flex-direction: row
     gap: 3.875em
-    width: 380px
+    width: 100%
+    padding-top: 5.5625em
     &__login
         display: flex
         flex-direction: column
         gap: 20px
         padding: 32px
-        width: 382px
+        width: 34.41%
+        border-radius: 0.625em
+        background: #7C7C7C20
         &_email
             background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M15.5 1.5C15.5 0.675 14.825 0 14 0H2C1.175 0 0.5 0.675 0.5 1.5V10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5ZM14 1.5L8 5.25L2 1.5H14ZM14 10.5H2V3L8 6.75L14 3V10.5Z' fill='%23D0D0D0'/%3e%3c/svg%3e ") no-repeat
             background-position: 1.5em
@@ -180,6 +183,30 @@ a
             &:hover
                 color: $colorLink
     &__register
+        display: flex
+        flex-direction: column
+        gap: 1.75em
+
+
+.register
+    position: relative
+    display: grid
+    grid-template-columns: repeat(2, 318px) 
+    grid-template-rows: repeat(4, 1fr)
+    gap: 1.5em
+    &__box
+        display: flex
+        flex-direction: column
+        gap: 0.5rem
+    &__checkbox
+        display: flex
+        flex-direction: row
+        gap: 0.625em
+    &__btn
+        margin-left: 51%
+        width: 156px
+        height: 49px
+    
         
 .footer
     display: flex
@@ -296,12 +323,15 @@ a
     font-size: 0.875em
     line-height: 100%
     color: $colorWhite
-    border: 1px solid $colorWhite
-    padding: 15px 24px
+    border: 1px solid #FFFFFF80
+    padding: 15px 24px  
     box-sizing: border-box
     border-radius: 1.5rem
     &__left
         padding-left: 3.25em
+    &__bg
+        background: $backgroundColor
+
 .input-checkbox
     appearance: none
     width: 14px
