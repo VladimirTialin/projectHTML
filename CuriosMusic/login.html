@@ -39,10 +39,11 @@
     </header>
     <div class="background-content center">
         <div class="account">
-            <form class="account__login box-content">
+            <form class="account__login">
                 <h1 class="head head__t20">Login</h1>
                 <input class="account__login_email input-fields input-fields__left" type="email" placeholder="Email...">
-                <input class="account__login_pass input-fields input-fields__left" type="password" placeholder="Password...">
+                <input class="account__login_pass input-fields input-fields__left" type="password"
+                    placeholder="Password...">
                 <div class="account__box-pass">
                     <div class="account__label">
                         <input class="input-checkbox" type="checkbox">
@@ -52,11 +53,42 @@
                 </div>
                 <button class="account__btn button button__gradient"><span>Login</span></button>
             </form>
-            пше <h1 class="head head__t20">Register (New Users)</h1>
-            <form class="account__register">
-                
+            <div class="account__register">
+                <h1 class=" register__head head head__t20">Register (New Users)</h1>
+                <form class="register">
+                    <div class="register__box">
+                        <label class="text text__t14">First Name</label>
+                        <input class="input-fields input-fields__bg" type="text" placeholder="First Name">
+                    </div>
+                    <div class="register__box">
+                        <label class="text text__t14">Last Name</label>
+                        <input class="input-fields input-fields__bg" type="text" placeholder="Last Name">
+                    </div>
+                    <div class="register__box">
+                        <label class="text text__t14">E-mail Address</label>
+                        <input class="input-fields input-fields__bg" type="email" placeholder="E-mail Address">
+                    </div>
+                    <div class="register__box">
+                        <label class="text text__t14">Phone Number</label>
+                        <input class="input-fields input-fields__bg" type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="register__box">
+                        <label class="text text__t14">Display Name</label>
+                        <input class="input-fields input-fields__bg" type="tel" placeholder="Display Name">
+                    </div>
+                    <div class="register__box">
+                        <label class="text text__t14">Password</label>
+                        <input class="input-fields input-fields__bg" type="password" placeholder="Password">
+                    </div>
+                    <div class="register__checkbox">
+                        <input class="input-checkbox" type="checkbox" placeholder="Password">
+                        <label class="text text__t14">Add me to the marketing list</label>
+                    </div>
 
-            </form>
+                        <button class="register__btn button button__gradient"><span>Register</span></button>
+
+                </form>
+            </div>
         </div>
         <div class="ellipse ellipse__big ellipse__loc1"></div>
         <div class="ellipse ellipse__loc2"></div>

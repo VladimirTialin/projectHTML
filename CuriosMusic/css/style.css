@@ -200,14 +200,20 @@ a {
   display: flex;
   flex-direction: row;
   gap: 3.875em;
-  width: 380px;
+  width: 100%;
+  justify-items: right;
+  padding-top: 5.5625em;
+  padding-bottom: 8.75em;
 }
 .account__login {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 32px;
-  width: 382px;
+  gap: 1.25em;
+  padding: 2em;
+  width: 34%;
+  height: 294px;
+  border-radius: 0.625em;
+  background: rgba(124, 124, 124, 0.1254901961);
 }
 .account__login_email {
   background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M15.5 1.5C15.5 0.675 14.825 0 14 0H2C1.175 0 0.5 0.675 0.5 1.5V10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5ZM14 1.5L8 5.25L2 1.5H14ZM14 10.5H2V3L8 6.75L14 3V10.5Z' fill='%23D0D0D0'/%3e%3c/svg%3e ") no-repeat;
@@ -242,6 +248,36 @@ a {
 .account__box-pass a:hover {
   color: #5B00FB;
 }
+.account__register {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75em;
+  width: 71%;
+}
+
+.register {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5em;
+}
+.register__box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 47.8%;
+}
+.register__checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625em;
+}
+.register__btn {
+  margin-left: 76%;
+  width: 156px;
+  height: 49px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -398,13 +434,16 @@ a {
   font-size: 0.875em;
   line-height: 100%;
   color: #FFF;
-  border: 1px solid #FFF;
+  border: 1px solid rgba(255, 255, 255, 0.5019607843);
   padding: 15px 24px;
   box-sizing: border-box;
   border-radius: 1.5rem;
 }
 .input-fields__left {
   padding-left: 3.25em;
+}
+.input-fields__bg {
+  background: #101029;
 }
 
 .input-checkbox {
