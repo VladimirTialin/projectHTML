@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 584px);
+  padding-right: calc(50% - 584px);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: space-between;
+  padding-top: 1.875em;
+  padding-bottom: 1.875em;
+  background: #000;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+}
+
+.studio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 75vw;
+  height: 66.12vh;
+  margin-left: calc(50% - 37.5vw);
+  margin-right: calc(50% - 37.5vw);
+  background: url("../img/seashore.png") center center no-repeat;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4.375em;
+  gap: 0.5em;
+  width: 580px;
+}
+
+.shooting-settings {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  bottom: 2.5625em;
+  right: 2.4375em;
+}
+.shooting-settings__set {
+  display: flex;
+  flex-direction: row;
+  gap: 0.375em;
+}
+
+.specialization {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding-top: 7em;
+}
+.specialization article {
+  text-align: center;
+}
+.specialization__box {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+.specialization__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 1em;
+  width: 44.17%;
+  height: 540px;
+  justify-content: end;
+}
+.specialization__content img {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.sunset {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 6.25em;
+  width: 75vw;
+  height: 46.15vh;
+  margin-left: calc(50% - 37.5vw);
+  margin-right: calc(50% - 37.5vw);
+  background: url("../img/mountains.png") center center no-repeat;
+}
+.sunset__box {
+  width: 298px;
+  padding-right: 3.875em;
+}
+
+.tools {
+  margin-left: calc(50% - 37.5vw);
+  margin-right: calc(50% - 37.5vw);
+}
+
+.link {
+  position: relative;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #FFF;
+  transition: 0.4s;
+}
+.link:after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: -0.625em;
+  left: -1.25em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  width: 100%;
+  height: 2.625em;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.link:hover {
+  color: #000;
+}
+.link:hover:after {
+  background: #FFF;
+  border-radius: 10px;
+}
+
+.head {
+  font-weight: 400;
+  font-size: 3.375em;
+  text-transform: capitalize;
+  color: #FFF;
+}
+.head__t42 {
+  font-size: 2.5em;
+  line-height: 2.625em;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1.25em;
+  color: #C0C0C0;
+}
+.text__t23 {
+  font-size: 1.4375em;
+  line-height: 1.875em;
+}
+.text__t12 {
+  font-size: 0.75em;
+  line-height: 0.75em;
+  color: #FFF;
+}
+.text__upper {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.text__upper_white {
+  color: #FFF;
+}
+
+.button {
+  position: relative;
+  width: 153px;
+  height: 42px;
+  background: #FFF;
+  border: none;
+  border-radius: 14px;
+  padding-left: 22px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: #000;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.button:after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+  background: #000;
+  transition: 0.4s;
+}/*# sourceMappingURL=style.css.map */

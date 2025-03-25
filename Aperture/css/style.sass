@@ -1,0 +1,177 @@
+@import vars
+*
+    margin: 0
+    padding: 0
+body
+    font-family: 'Poppins'
+    background: $colorBlack
+a
+    text-decoration: none
+.center
+    padding-left: calc( 50% - $sizeSite / 2 )
+    padding-right: calc( 50% - $sizeSite / 2 )
+.header
+    display: flex
+    flex-direction: row
+    gap: 1em
+    justify-content: space-between
+    padding-top: 1.875em
+    padding-bottom: 1.875em
+    background: $colorBlack
+    
+.nav
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 2em
+.studio
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: end
+    width: 75vw
+    height: 66.12vh
+    @include center(75vw)
+    background: url('../img/seashore.png') center center no-repeat
+.section
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-bottom: 4.375em
+    gap: 0.5em
+    width: 580px
+.shooting-settings
+    position: absolute
+    display: flex
+    flex-direction: row
+    gap: 1em
+    bottom: 2.5625em
+    right: 2.4375em
+    &__set
+        display: flex
+        flex-direction: row
+        gap: 0.375em
+.specialization
+    display: flex
+    flex-direction: column
+    gap: 2.5em
+    padding-top: 7em
+    article
+        text-align: center
+    &__box
+        display: flex
+        flex-flow: row wrap
+        gap: 1rem
+    &__content
+        position: relative
+        display: flex
+        flex-direction: column
+        padding: 30px
+        gap: 1em
+        width: 44.17%
+        height: 540px
+        justify-content: end
+        img
+            position: absolute
+            z-index: -2
+            width: 100%
+            top: 0
+            left: 0
+            background-size: cover
+.sunset
+    position: absolute
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    margin-top: 6.25em
+    width: 75vw
+    height: 46.15vh
+    @include center(75vw)
+    background: url('../img/mountains.png') center center no-repeat
+    &__box
+        width: 298px
+        padding-right: 3.875em
+.tools
+    @include center(75vw)
+.link
+    position: relative
+    font-weight: 400
+    font-size: 13px
+    line-height: 20px
+    color: $colorWhite
+    transition: .4s
+    &:after
+        position: absolute
+        z-index: -1
+        content: ''
+        top: -0.625em
+        left: -1.25em
+        padding-left: 1.25em
+        padding-right: 1.25em
+        width: 100%
+        height: 2.625em
+        border-radius: 10px
+        transition: .4s
+    &:hover
+        color: $colorBlack
+        &:after
+            background: $colorWhite
+            border-radius: 10px
+.head
+    font-weight: 400
+    font-size: 3.375em
+    text-transform: capitalize
+    color: $colorWhite
+    &__t42
+        font-size: 2.5em
+        line-height: 2.625em
+.text
+    font-weight: 400
+    font-size: 0.875em
+    line-height: 1.25em
+    color: $colorGray
+    &__t23
+        font-size: 1.4375em
+        line-height: 1.875em
+    &__t12
+        font-size: 0.75em
+        line-height: 0.75em
+        color: $colorWhite
+    &__upper
+        letter-spacing: 2px
+        text-transform: uppercase
+        &_white
+            color: $colorWhite
+.button
+    position: relative
+    width: 153px
+    height: 42px
+    background: $colorWhite
+    border: none
+    border-radius: 14px
+    padding-left: 22px
+    font-weight: 400
+    font-size: 15px
+    line-height: 20px
+    letter-spacing: 0.4px
+    color: $colorBlack
+    cursor: pointer
+    transition: .4s
+    &:after
+        position: absolute
+        content: ''
+        top: 5px
+        left: 4px
+        width: 32px
+        height: 32px
+        border-radius: 12px
+        background: $colorBlack
+        transition: .4s
+
+    
+
+
+
+        
